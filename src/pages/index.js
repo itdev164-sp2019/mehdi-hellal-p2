@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby'
+import {Button} from "../components/Element/Button"
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -13,6 +14,8 @@ const IndexPage = ({data}) => (
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
+      <Button variant = "primary">Test</Button>
+      <br/>
       {data.allMarkdownRemark.edges.map(post => (
         <a key ={post.node.id} href={post.node.frontmatter.path}>{post.node.frontmatter.title}</a>
       ))}

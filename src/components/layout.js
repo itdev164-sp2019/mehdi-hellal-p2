@@ -11,8 +11,11 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import {ThemeProvider} from "styled-components"
+import {DefaultTheme as theme } from "../themes/DefaultTheme"
 
 const Layout = ({ children }) => (
+  <ThemeProvider theme={theme}>
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -44,6 +47,7 @@ const Layout = ({ children }) => (
       </>
     )}
   />
+  </ThemeProvider>
 )
 
 Layout.propTypes = {
