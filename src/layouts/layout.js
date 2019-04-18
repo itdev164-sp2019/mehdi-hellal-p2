@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { Footer, Main, Section, Button} from '../components/Element'
-import Header from "./header"
+import Header from "../gatsby-components/header"
 import "./layout.css"
 import {ThemeProvider} from "styled-components"
 import {DefaultTheme as theme } from "../themes/DefaultTheme"

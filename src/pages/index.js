@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../layouts/layout"
+import Image from "../gatsby-components/image"
+import SEO from "../gatsby-components/seo"
 import { graphql } from 'gatsby'
 import {Button, IconButton} from "../components/Element"
 import {ReactLogo} from "styled-icons/boxicons-logos"
