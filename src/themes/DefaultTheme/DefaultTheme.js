@@ -1,3 +1,10 @@
+import React from 'react'
+import HeadImage from './images/my-picture.png'
+
+
+const images ={
+    HeadImage
+}
 const theme = {
     space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
     lineHeights: {
